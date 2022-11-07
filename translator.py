@@ -1,15 +1,16 @@
 from distutils.filelist import translate_pattern
 from translate import Translator
 import sys
+import os
 
 # input language option
 
-lang = sys.argv[1]
-file_input = sys.argv[2]
-file_output = sys.argv[3]
+lang, file_input, file_output, new_dir = sys.argv[1:4]
+
 
 translator = Translator(to_lang=f'{lang}')
 
+if 
 # translate file into new file
 try:
     with open(f'{file_input}', mode='r') as my_file:
